@@ -1,10 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <router-view/>
 </template>
+
+<script>
+export default {
+  data() {
+      return {
+          preloader: true,
+      }
+  },
+  methods: {
+    isClick() {
+      console.log('true')
+      this.preloader = false
+      console.log(this.preloader)
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
