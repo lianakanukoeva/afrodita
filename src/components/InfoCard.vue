@@ -27,6 +27,7 @@
             display: block;
             border-radius: 50%;
             overflow: hidden;
+            background-color: #ccc;
         }
     }
     &__info {
