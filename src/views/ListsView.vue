@@ -1,5 +1,3 @@
 <template>
-    <div>
-        lists
-    </div>
+    <div>lists</div>
 </template>
