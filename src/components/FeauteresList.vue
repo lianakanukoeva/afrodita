@@ -19,6 +19,20 @@
         text-transform: uppercase;
         font-size: 16px;
     }
+    .feauteres__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #f89513;
+      img {
+        width: 65%;
+        height: 65%;
+      }
+    }
     .feauteres__ul {
       text-align: left;
       li {

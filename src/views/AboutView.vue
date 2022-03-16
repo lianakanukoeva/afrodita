@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <section class="comments">
-      <h1 class="comments__title">Отзывы</h1>
+      <TitleView :title="title" />
       <div class="comments__content">
         <InfoCard 
           v-for="(item, index) in pageCheck"
@@ -100,12 +100,14 @@
 </style>
 
 <script>
+import TitleView from '@/components/TitleView.vue'
 import InfoCard from '@/components/InfoCard.vue'
 import FormView from '@/components/FormView.vue'
 export default {
   name: 'AboutView',
   data() {
     return {
+      title: 'Отзывы',
       pageNum: 1,
       pageInfo: 3,
       news: [
@@ -144,7 +146,8 @@ export default {
   },
   components: {
     InfoCard,
-    FormView
+    FormView,
+    TitleView
   },
   computed: {
       pages() {

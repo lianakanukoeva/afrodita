@@ -2,7 +2,7 @@
   <div class="main">
     <section class="bunner"></section>
     <section class="feauteres">
-      <h2 class="feauteres__title">Особенности</h2>
+      <TitleView :title="title" />
       <div class="feauteres__content">
       <FeauteresList
         v-for="(item, index) in feauteres" :key="index"
@@ -61,27 +61,9 @@
     padding: 100px 0;
     background-color: #000;
     color: #fff;
-    &__title {
-      text-transform: uppercase;
-      font-size: 48px;
-    }
     &__content {
       display: flex;
       justify-content: space-between;
-    }
-    &__icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 70px;
-      height: 70px;
-      margin: 0 auto;
-      border-radius: 50%;
-      background-color: #f89513;
-      img {
-        width: 75%;
-        height: 75%;
-      }
     }
   }
   .news {
@@ -149,12 +131,14 @@
 </style>
 
 <script>
+import TitleView from '@/components/TitleView.vue'
 import InfoCard from '@/components/InfoCard.vue'
 import FeauteresList from '@/components/FeauteresList.vue'
 export default {
   name: 'HomeView',
   data() {
     return {
+      title: 'Особенности',
       pageNum: 1,
       pageInfo: 3,
       feauteres: [
@@ -246,7 +230,8 @@ export default {
   },
   components: {
     InfoCard,
-    FeauteresList
+    FeauteresList,
+    TitleView
   },
   computed: {
       pages() {

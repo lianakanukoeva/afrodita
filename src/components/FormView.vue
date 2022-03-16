@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="" action="" class="form">
-        <h2 class="form__title">Оставить отзыв</h2>
+        <TitleView class="form__title" :title="title" />
         <div class="form__info">
             <div class="form__person">
                 <label for="">Ваше имя</label>
@@ -32,9 +32,8 @@
     background-color: rgb(238, 238, 238);
     padding: 50px 150px;
     &__title {
-        font-size: 48px;
-        font-weight: 700;
         text-align: center;
+        text-transform: none;
     }
     &__info {
         display: flex;
@@ -99,3 +98,17 @@
     }
 }
 </style>
+
+<script>
+import TitleView from '@/components/TitleView.vue'
+export default {
+    components: {
+        TitleView
+    },
+    data() {
+        return {
+            title: 'Оставить отзыв'
+        }
+    }
+}
+</script>
