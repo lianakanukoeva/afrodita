@@ -15,7 +15,6 @@
         transition: all .2s;
         cursor: pointer;
         &:hover {
-            // width: 70%;
             transform: scale(1.4);
             filter: grayscale(0);
         }

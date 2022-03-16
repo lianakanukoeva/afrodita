@@ -31,11 +31,7 @@
         }
     }
     &__logo {
-        // font-size: 22px;
         color: #f89513;
-    }
-    &__socials {
-        // font-size: 22px;
     }
 }
 </style>
