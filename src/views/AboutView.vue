@@ -84,13 +84,6 @@
       }
     }
   }
-  .info-card {
-    &__img {
-      img  {
-        max-width: 160px;
-      }
-    }
-  }
   .comment-form {
     display: flex;
     justify-content: center;
@@ -108,7 +101,7 @@ export default {
   data() {
     return {
       title: 'Отзывы',
-      pageNum: 1,
+      pageNum: 0,
       pageInfo: 3,
       news: [
         {

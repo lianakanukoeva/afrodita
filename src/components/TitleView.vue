@@ -4,6 +4,7 @@
 
 <style lang="scss">
 .title {
+    font-family: OpenSans-Bold;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 48px;

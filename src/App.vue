@@ -28,7 +28,7 @@ body {
   padding: 0;
   line-height: 1.42;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: OpenSans-Light;
 }
 
 *, *::before, after{

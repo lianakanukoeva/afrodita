@@ -21,6 +21,7 @@
     padding: 15px 0;
     &__txt {
         a {
+            font-family: OpenSans-Bold;
             color: #fff;
             font-weight: 600;
             transition: color .25s;
@@ -31,7 +32,11 @@
         }
     }
     &__logo {
+        font-family: Gora-Free;
         color: #f89513;
+    }
+    &__socials {
+        font-family: OpenSans-Bold;
     }
 }
 </style>

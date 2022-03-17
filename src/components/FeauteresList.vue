@@ -6,7 +6,7 @@
       <p class="feauteres__paragraph">{{ paragraph }}</p>
       <p class="feauteres__text">{{ txt }}</p>
       <ul class="feauteres__ul">
-        <li v-for="(li, k) in list" :key="k">• {{ li }}</li>
+        <li v-for="(li, k) in list" :key="k"><p>• {{ li }}</p></li>
       </ul>
     </div>
 </template>
@@ -16,6 +16,7 @@
     max-width: 30%;
     text-align: center;
     .feauteres__paragraph {
+      font-family: OpenSans-Bold;
         text-transform: uppercase;
         font-size: 16px;
     }

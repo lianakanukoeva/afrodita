@@ -43,6 +43,7 @@
         font-weight: 700;
     }
     &__title {
+        font-family: OpenSans-Bold;
         text-transform: uppercase;
         margin: 20px auto;
         font-weight: 700;

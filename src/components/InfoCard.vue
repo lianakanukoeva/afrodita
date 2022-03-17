@@ -21,9 +21,14 @@
 .info-card {
     display: flex;
     padding: 40px 0;
+    transition: all .2s;
+    &:hover {
+        transform: scale(1.05);
+    }
     &__img {
         box-sizing: border-box;
         img {
+            max-width: 160px;
             display: block;
             border-radius: 50%;
             overflow: hidden;
@@ -43,6 +48,7 @@
     &__title {
         color: #000;
         font-weight: 700;
+        font-family: OpenSans-Bold;
     }
     &__text {
         font-weight: 300;

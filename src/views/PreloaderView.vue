@@ -1,7 +1,7 @@
 <template>
     <div class="preloader">
         <div class="preloader__img">
-            <img src="../assets/logo_1.png" alt="">
+            <img src="../assets/img/logo_1.png" alt="">
         </div>
         <router-link to="/main">перейти на сайт</router-link>
     </div>
@@ -27,6 +27,7 @@
     align-items: center;
     background: url(../assets/img/bg.png) 100% 100% no-repeat;
     background-size: cover;
+    font-family: OpenSans-Bold;
     &__img {
         animation: fade-in 1s ease-in;
     }

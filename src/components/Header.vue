@@ -33,6 +33,7 @@
     align-items: center;
     &__logo {
         color: #f89513;
+        font-family: Gora-Free;
         font-size: 22px;
     }
     &__menu {
@@ -64,6 +65,7 @@
             padding: 10px;
             opacity: 0;
             span {
+                font-family: OpenSans-Bold;
                 font-weight: 700;
                 color: #f89513;
             }
@@ -82,6 +84,7 @@
         }
     }
     &__phone {
+        font-family: OpenSans-Bold;
         font-size: 22px;
         font-weight: 600;
         color: #fff;
