@@ -1,6 +1,7 @@
 <template>
   <div class="main">
-    <section class="bunner"></section>
+    <section class="bunner">
+    </section>
     <section class="feauteres">
       <TitleView :title="title" />
       <div class="feauteres__content">
@@ -132,6 +133,7 @@
 
 <script>
 import TitleView from '@/components/TitleView.vue'
+import SvgIcon from '@/components/SvgIcon.vue'
 import InfoCard from '@/components/InfoCard.vue'
 import FeauteresList from '@/components/FeauteresList.vue'
 export default {
@@ -231,7 +233,8 @@ export default {
   components: {
     InfoCard,
     FeauteresList,
-    TitleView
+    TitleView,
+    SvgIcon
   },
   computed: {
       pages() {

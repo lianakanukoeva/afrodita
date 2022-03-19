@@ -6,9 +6,25 @@
             Автор работы: <a href="http://">Канукоева Лиана</a>
         </div>
         <div class="footer__logo">Афродита</div>
-        <div class="footer__socials">Наши социальные сети</div>
+        <div class="footer__socials">
+            Наши социальные сети
+            <div class="footer__icons">
+                <SvgIcon name="vk" />
+                <SvgIcon name="mail" />
+                <SvgIcon name="google" />
+            </div>
+        </div>
     </footer>
 </template>
+
+<script>
+import SvgIcon from '@/components/SvgIcon.vue'
+  export default {
+      components: {
+        SvgIcon
+    },
+  }
+</script>
 
 <style lang="scss">
 .footer {
@@ -37,6 +53,18 @@
     }
     &__socials {
         font-family: OpenSans-Bold;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        svg {
+            &:hover {
+                cursor: pointer;
+                path {
+                    fill: #f89513;
+                }
+            }
+        }
     }
 }
 </style>

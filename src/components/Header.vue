@@ -2,11 +2,16 @@
     <header class="header">
         <div class="header__logo">
             Афродита
+            <SvgSprite 
+                symbol="icon-example"
+                size="0 0 24 24"
+                class="header__icon"
+             /> 
         </div>
         <nav class="header__menu">
-            <router-link to="/main">Главная </router-link>
-            <router-link to="/about">Отзывы </router-link>
-            <router-link to="/lists">Услуги</router-link>
+            <router-link to="/main"><SvgIcon name="heart_meter" />Главная </router-link>
+            <router-link to="/about"><SvgIcon name="star" />Отзывы </router-link>
+            <router-link to="/lists"><SvgIcon name="dumbbell" />Услуги</router-link>
         </nav>
         <div class="header__info">
             <div class="header__phone">8(800)00-392-10</div>
@@ -20,6 +25,15 @@
         </div>
     </header>
 </template>
+
+<script>
+import SvgIcon from '@/components/SvgIcon.vue'
+  export default {
+      components: {
+        SvgIcon
+    },
+  }
+</script>
 
 <style lang="scss">
 .header {
@@ -40,11 +54,25 @@
         a {
             color: #fff;
             text-decoration: none;
+            svg {
+                margin: 0 6px;
+                transform: translateY(6px);
+            }
             &:hover {
                 color: #fabe70;
+                svg {
+                    path {
+                        fill: #fabe70;
+                    }
+                }
             }
             &.router-link-exact-active {
                 color: #f89513;
+                svg {
+                    path {
+                        fill: #f89513;
+                    }
+                }
             }
         }
     }
